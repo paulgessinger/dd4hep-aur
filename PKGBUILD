@@ -3,7 +3,7 @@
 pkgname=dd4hep
 _pkgver=01-16-01
 pkgver=$(echo $_pkgver | sed 's/-/./g')
-pkgrel=2
+pkgrel=3
 pkgdesc="Detector Description Toolkit for High Energy Physics"
 arch=('x86_64')
 url="https://dd4hep.web.cern.ch/dd4hep/"
