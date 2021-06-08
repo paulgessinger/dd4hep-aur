@@ -1,8 +1,8 @@
 # Maintainer:  gagnonlg NOSPAM protonmail NOSPAM com
 # See also: https://github.com/paulgessinger/dd4hep-aur
 pkgname=dd4hep
-_pkgver=01-15
-pkgver=$(echo $_pkgver | sed 's/-/./')
+_pkgver=01-16-01
+pkgver=$(echo $_pkgver | sed 's/-/./g')
 pkgrel=2
 pkgdesc="Detector Description Toolkit for High Energy Physics"
 arch=('x86_64')
@@ -17,7 +17,7 @@ depends=('xerces-c'
         )
 makedepends=('boost>=1.49' 'cmake>=3.12')
 source=(https://github.com/AIDASoft/$pkgname/archive/v$_pkgver.tar.gz)
-md5sums=('6e28f8ddc798522ede04644fc45209bb')
+md5sums=('7b963a5fb4ef8b5294f8fd30bcd856c4')
 
 build() {
   cd "$srcdir/DD4hep-$_pkgver"
